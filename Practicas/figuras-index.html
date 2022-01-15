@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Figuras geométricas</title>
+</head>
+<body style="text-align: center;">
+    <header>
+        <h1>Figuras geométricas</h1>
+        <p>calculadora de figuras geométricas </p>
+    </header>
+    <section>
+        <h2>Calucla el área y el perímetro de un cuadrado</h2>
+        <!--Creación de formulario para ingresar datos-->
+        <form action="">
+            <label for="inputLadoCuadrado">
+                <span>Escribe cuanto mide cada lado de tu cuadrado</span>
+                <!--se le agrega una id al input del lado de cuadrado-->
+                <input id="inputLadoCuadrado" type="number" placeholder="lado">
+            </label>
+            <br>
+            <!--Los botones tienen una propiedad que al hacer click invocan a una método en nuestro archivo de javascript-->
+            <button type="button" onclick="calcularPerimetroCuadrado()">Calcular el perímetro</button>
+            <button type="button"  onclick="calcularAreaCuadrado()">Calcular area</button>
+        </form>
+        <hr>
+        <h2>Calucla el área y el perímetro de un triángulo</h2>
+        <!--Creación de formulario para ingresar datos-->
+        <form action="">
+            <label for="inputLado1Triangulo">
+                <span>Escribe cuanto mide el primer lado de tu triángulo</span>
+                <input id="inputLado1Triangulo" type="number" placeholder="lado 1">
+            </label>
+            <br>
+            <label for="inputLado2Triangulo">
+                <span>Escribe cuanto mide el segundo lado de tu triángulo</span>
+                <input id="inputLado2Triangulo" type="number" placeholder="lado 2">
+            </label>
+            <br>
+            <label for="inputBaseTriangulo">
+                <span>Escribe cuanto mide la base de tu triángulo</span>
+                <input id="inputBaseTriangulo" type="number" placeholder="base">
+            </label>
+            <br>
+            <label for="inputAlturaTriangulo">
+                <span>Escribe cuanto mide la altura de tu triángulo</span>
+                <input id="inputAlturaTriangulo" type="number" placeholder="altura">
+            </label>
+            <br>
+            <!--Los botones tienen una propiedad que al hacer click invocan a una método en nuestro archivo de javascript-->
+            <button type="button" onclick="calcularPerimetroTriangulo()">Calcular el perímetro</button>
+            <button type="button" onclick="calcularAreaTriangulo()">Calcular el área</button>
+            <hr>
+        </form>
+        <h2>Calucla el área y el perímetro de un Círculo</h2>
+        <form action="">
+            <label for="inputRadioCirculo">
+                <span>Escribe cuanto mide el radio de tu círculo</span>
+                <input id="inputRadioCirculo" type="number" placeholder="radio">
+            </label>
+            <br>
+            <!--Los botones tienen una propiedad que al hacer click invocan a una método en nuestro archivo de javascript-->
+            <button type="button" onclick="calcularPerimetroCirculo()">Calcular el perímetro</button>
+            <button type="button"  onclick="calcularAreaCirculo()">Calcular area</button>
+        </form>
+        <hr>
+        <h2>Calcular altura de triángulo isóceles</h2>
+        <form action="">
+            <label for="inputLado1Isoceles">
+                <span>Escribe cuanto mide el primer lado de tu triángulo</span>
+                <input id="inputLado1Isoceles" type="number" placeholder="lado 1">
+            </label>
+            <br>
+            <label for="inputLado2Isoceles">
+                <span>Escribe cuanto mide el segundo lado de tu triángulo</span>
+                <input id="inputLado2Isoceles" type="number" placeholder="lado 2">
+            </label>
+            <br>
+            <label for="inputBaseIsoceles">
+                <span>Escribe cuanto mide la base de tu triángulo</span>
+                <input id="inputBaseIsoceles" type="number" placeholder="base">
+            </label>
+            <br>
+            <!--Los botones tienen una propiedad que al hacer click invocan a una método en nuestro archivo de javascript-->
+            <button type="button" onclick="calcularAlturaIsoceles()">Calcular la altura</button>
+            <hr>
+        </form>
+    </section>
+    <script src="figuras.js"></script>
+</body>
+</html>
