@@ -25,7 +25,7 @@ function calcularPrecioConDescuento(){
             alert("Cupón válido!");
             //se aplica el cupon al precio
             var porcentajePrecioConCupon = 100 - 10;
-            final= (precioOriginal * porcentajePrecioConCupon) /100;
+            final= (final * porcentajePrecioConCupon) /100;
         }
     }
     //almacenamos el id en la variable result
